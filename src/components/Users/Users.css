@@ -1,0 +1,149 @@
+.user-panel {
+  max-width: 800px;
+  flex: 4; 
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* استایل ورودی جستجو */
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* دکمه‌ها */
+.add-user-button,
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.add-user-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* جدول */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* مودال */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Modal {
+  background: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Modal h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.Modal label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.Modal input[type="text"],
+.Modal input[type="email"],
+.Modal input[type="number"] {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.Modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Modal button {
+  margin: 3px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Modal .save-button {
+  background-color: #007bff;
+  color: white;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.Modal .cancel-button {
+  background-color: #6c757d;
+  color: white;
+  width: 100%;
+}
+
+/* Flexbox برای چینش دکمه‌ها */
+.Modal .button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.Modal button.actived:hover{
+  background-color: #dc3545;
+}
+
+.Modal button.active:hover{
+  background-color: #4CAF50;
+}
